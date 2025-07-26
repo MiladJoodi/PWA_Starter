@@ -101,7 +101,7 @@ Includes service worker setup, manifest configuration, and ready-to-use PWA feat
 
 ## License
 
-MIT License © Milad Joodi
+This project is licensed under the MIT License © Milad Joodi. Please give proper credit if you use or modify this code.
 
 ---
 
