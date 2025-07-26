@@ -1,6 +1,6 @@
 {
-    "name": "My PWA App",
-    "short_name": "PWA",
+    "name": "PWA Starter by Joodi",
+    "short_name": "PWA Joodi",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
