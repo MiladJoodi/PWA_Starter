@@ -239,9 +239,9 @@ export default function Home() {
           <rect width="100%" height="100%" fill="url(#dots)" className="dark:hidden" />
           <rect width="100%" height="100%" fill="url(#dots-dark)" className="hidden dark:block" />
         </svg>
-        <div className="absolute top-20 left-20 w-64 h-64 bg-blue-200 dark:bg-blue-900/30 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute top-1/3 right-24 w-80 h-80 bg-purple-200 dark:bg-purple-900/30 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-emerald-200 dark:bg-emerald-900/30 rounded-full opacity-20 blur-3xl -translate-x-1/2"></div>
+        <div className="absolute top-20 left-20 w-64 h-64 bg-blue-200 dark:bg-blue-800/40 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute top-1/3 right-24 w-80 h-80 bg-purple-200 dark:bg-purple-800/40 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-emerald-200 dark:bg-emerald-800/40 rounded-full opacity-20 blur-3xl -translate-x-1/2"></div>
       </div>
 
       {/* Dot pattern */}
@@ -263,7 +263,7 @@ export default function Home() {
       ></div>
 
       {/* هدر اکشن‌ها */}
-      <header className="w-full flex items-center justify-between gap-2 px-4 pt-4 z-10 relative">
+      <header className="w-full flex items-center justify-between gap-2 px-4 pt-4 z-10 relative dark:bg-slate-900 dark:border-b dark:border-slate-600">
         <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto sm:flex-wrap">
           <a 
             href="https://www.linkedin.com/in/joodi" 
@@ -337,13 +337,13 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
+          <p className="text-xl md:text-2xl text-slate-400 dark:text-slate-100 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
             Experience the future of web applications with our cutting-edge PWA built on{" "}
-            <span className="font-semibold text-slate-800 dark:text-slate-200">
+            <span className="font-semibold text-slate-600 dark:text-white">
               Next.js 15
             </span>{" "}
             and{" "}
-            <span className="font-semibold text-slate-800 dark:text-slate-200">
+            <span className="font-semibold text-slate-600 dark:text-white">
               TypeScript
             </span>
             . Install it on any device and enjoy offline capabilities.
@@ -354,7 +354,7 @@ export default function Home() {
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className={`bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-slate-200/50 dark:border-slate-700/50 ${
+                className={`bg-white/80 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-slate-200/50 dark:border-slate-700/50 ${
                   mounted ? "animate-fade-in-up" : ""
                 }`}
                 style={{ animationDelay: `${i * 100}ms` }}
@@ -383,7 +383,7 @@ export default function Home() {
             {features.map((feature, i) => (
               <div
                 key={i}
-                className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden"
+                className="group bg-white/80 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 backdrop-blur-xl rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-2xl`}></div>
                 
@@ -392,7 +392,7 @@ export default function Home() {
                     {feature.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                       {feature.title}
                     </h3>
                     <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -414,12 +414,12 @@ export default function Home() {
             {services.map((service, i) => (
               <div
                 key={i}
-                className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl shadow-lg p-8 flex flex-col items-center text-center border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
+                className="bg-white/80 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 backdrop-blur-xl rounded-2xl shadow-lg p-8 flex flex-col items-center text-center border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
               >
                 <div className="text-blue-600 dark:text-blue-400 mb-6">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-slate-800 dark:text-slate-200">
+                <h3 className="text-xl font-bold mb-4 text-slate-800 dark:text-white">
                   {service.title}
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -443,8 +443,8 @@ export default function Home() {
                   <div className={`flex-shrink-0 w-16 h-16 ${item.color} rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg z-10`}>
                     {item.year}
                   </div>
-                  <div className="ml-8 bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 flex-1">
-                    <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">
+                  <div className="ml-8 bg-white/80 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 backdrop-blur-xl rounded-2xl p-6 shadow-lg border border-slate-200/50 dark:border-slate-700/50 flex-1">
+                    <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2">
                       {item.title}
                     </h3>
                     <p className="text-slate-600 dark:text-slate-400">
@@ -485,7 +485,7 @@ export default function Home() {
         >
           <div className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl rounded-3xl p-12 shadow-xl border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden">
             <div className="relative z-10">
-              <h2 className="text-4xl font-bold text-slate-800 dark:text-slate-200 mb-6">
+              <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-6">
                 Ready to explore?
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
